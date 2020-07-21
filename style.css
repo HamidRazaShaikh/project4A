@@ -1,0 +1,141 @@
+ body {
+     overflow-y: hidden;
+     overflow-x: hidden;
+     background-color: rgb(247, 247, 247);
+ }
+
+
+ #gun {
+
+     bottom: 0;
+     /* position: absolute; */
+ }
+
+
+
+ #gun-turret {
+     height: 100px;
+     width: 200px;
+     bottom: 0;
+     margin-left: 15px;
+     position: absolute;
+     background-color: transparent;
+
+ }
+
+
+ #gun-barrel {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     bottom: 50px;
+     z-index: -1;
+
+
+
+ }
+
+
+
+
+
+ #barrel {
+
+     height: 50px;
+     width: 200px;
+     margin-left: 30px;
+     position: relative;
+     z-index: -2;
+
+
+
+
+ }
+
+ #shell {
+
+     background-color: rgb(12, 12, 11);
+     position: relative;
+     height: 3px;
+     width: 15px;
+     margin-left: -50px;
+     border-radius: 2px 50px 50px 2px;
+     z-index: -3;
+
+
+ }
+
+ #plan-div {
+
+     position: absolute;
+     z-index: -2;
+ }
+
+ #plan {
+
+     height: 50px;
+     width: 150px;
+ }
+
+
+ ::-moz-selection {
+     background-color: transparent;
+     color: #000;
+ }
+
+ ::selection {
+     background-color: transparent;
+     color: #000;
+ }
+
+
+
+ #background {
+
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+
+ #text {
+
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     font-size: 12px;
+     margin-left: 20px;
+     position: absolute;
+     bottom: 400px;
+     left: 1100px
+ }
+
+ #cloud {
+     background-image: url('background.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 300px;
+     position: absolute;
+     width: 800px;
+     left: 100px;
+     opacity: 0.8;
+     z-index: -1
+ }
+
+
+ #flame {
+     background-image:url('gunfire.png') ;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     height: 50px;
+     width: 15px;
+     margin-left: 25px;
+     z-index: -2;
+     opacity : 0.8
+ }
